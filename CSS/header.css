@@ -1,0 +1,71 @@
+/* --------Top navigation ----------*/
+
+.topNavigation {
+	position: fixed; /* Gör så att naven sitter fast på den positionen om man scrollar*/
+	width: 85%; /*Navens bredd*/
+	z-index: 1; /* Gör så att den hamnar ovanför allt anntat på hemsidan */
+	background-color: black;
+	top: 0; /* Gör så att naven är alltid längst upp i hemsidan*/
+	left: 12rem; /* Gör så att naven sticker ut åt vänster och hamnar inte bakom sidnav */
+	padding: 17px;
+	transition: 400ms; /*Ger en mjuk hover effect*/
+}
+
+.topNavigationLinks a {
+	text-decoration: none; /* Ingen underlinje */
+	font-size: 1.25rem; /* Textens storlek */
+	transition: 200ms;
+	color: white;
+	font-family: "AvantGarde";
+}
+
+.topNavigationLinks ul {
+	display: flex;
+	justify-content: space-evenly; /* Gör en jämn uppdelning mellan länkarna */
+	align-items: center; /*Placerar allt i samma linje horisontelt */
+	padding: 0;
+	width: 100%;
+}
+
+/* --------Side navigation ----------*/
+.sideNav {
+	position: fixed;
+	z-index: 1; /* Gör så att den hamnar ovanpå topnav*/
+	background-color: black;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	border-right: solid 1px white; /* en vit linje på högersidan om naven */
+}
+
+.sideNav a {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family: "AvantGarde";
+	transition: 400ms; /*Ger en mjuk hover effect*/
+}
+
+.sideNav ul {
+	padding: 5px;
+}
+
+.sideNavContent ul {
+	width: 100%;
+	display: block;
+	margin-top: 7rem;
+	text-align: center;
+}
+
+.sideNavContent li {
+	font-size: 1.4em;
+	list-style: none;
+	padding: 30px 0;
+}
+
+/* När man lägger musen på länken */
+.sideNav a:hover,
+.topNavigationLinks a:hover {
+	color: #ccc;
+}

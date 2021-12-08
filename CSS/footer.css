@@ -1,0 +1,30 @@
+footer {
+	width: 80%; /*Navens bredd*/
+	background-color: black;
+	padding: 5px;
+	transition: 400ms; /*Ger en mjuk hover effect*/
+	right: 0;
+	position: absolute;
+}
+
+.footerContent a {
+	text-decoration: none; /* Ingen underlinje */
+	transition: 200ms;
+	color: white;
+	font-family: "AvantGarde";
+}
+
+.footerContent li {
+	list-style: none; /* Tar bort punkterna på länkarna */
+}
+
+.footerContent ul {
+	display: flex;
+	justify-content: space-evenly; /* Gör en jämn uppdelning mellan länkarna */
+	align-items: center; /*Placerar allt i samma linje horisontelt */
+	padding: 0;
+}
+
+.footerContent a:hover {
+	color: #ccc;
+}

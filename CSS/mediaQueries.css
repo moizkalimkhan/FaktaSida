@@ -1,0 +1,58 @@
+/* Kod kör om eneheten har en skärm på X storlek*/
+@media screen and (max-width: 770px) {
+	* {
+		overflow-x: hidden; /* Gör så att man inte kan scrolla åt sidan */
+	}
+
+	.topNavigation {
+		width: 87%;
+		left: 100px;
+	}
+
+	.sideNavContent ul {
+		margin-top: 3rem;
+	}
+
+	main {
+		margin-left: 10rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.topNavigation {
+		width: 87%;
+		left: 63px;
+	}
+
+	main {
+		margin-left: 6rem;
+	}
+
+	.footerContent ul {
+		display: block;
+		text-align: center;
+	}
+
+	.footerContent a {
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.topNavigation {
+		width: 87%;
+		left: 48px;
+	}
+
+	.topNavigationLinks a {
+		font-size: small;
+	}
+
+	.sideNav a {
+		font-size: 16px;
+	}
+
+	main {
+		margin-left: 4.5rem;
+	}
+}
